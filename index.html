@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Nunito:wght@400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Nunito:wght@400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
     <title>Twitter - Web</title>
 </head>
 <body>
-    <header>
-        <section class="navegacao__lateral">
+<div class="tamanho">
+    <header class="navegacao__lateral">
+        <aside class="aside-esquerda">
             <div class="navegacao">
                 <div>
                 <img src="assets/img/twitter.svg" alt="twitter">
@@ -66,19 +71,57 @@
             </div>   
             
             <div>
-                <img src="assets/img/Profile Picture.svg" alt="perfil" class="foto-perfil">
+                <img src="assets/main__img/Foto.jpeg" alt="perfil" class="foto-perfil">
             </div>
 
             <div class="informacao">
                 <span class="nome-sobrenome">João Vitor</span>
-                <p class="site">@Juaumvitu</p>
+                <p class="site">@Juaumvitu</p>                
             </div>
-            </div>
-            <div>
-                <div class="listra"></div>
-            </div>           
-        </section>        
+        </aside>
     </header>
+
+    
+    <main class="principal">
+        <h2 class="texto__home">Home</h2>
+        <div class="listra-cima"></div>
+        <img src="assets/main__img/dark.svg" alt="dark-tema" class="dark__tema">
+        <input type="text" name="publicacao" class="texto__publica" placeholder="What's happening?" minlength="1" maxlength="380">
+        <div class="listra-baixo"></div>
+        <div class="publicacao__opcao">
+            <img src="assets/main__img/imgIcon.svg" alt="icon">
+            <img src="assets/main__img/gifIcon.svg" alt="icon">
+            <img src="assets/main__img/graphIcon.svg" alt="icon">
+            <img src="assets/main__img/emojiIcon.svg" alt="icon">
+            <img src="assets/main__img/CalendarIcon.svg" alt="icon">
+        </div>
+        <button class="twittar__publicacao">Tweet</button>
+
+        <section class="conteudo__tweet">
+            <ul class="conteudo__principaltweet">
+                <li class="conteudo__principal">
+                    <img src="assets/main__img/72477227.jpeg" alt="Foto Perfil" class="perfil-usuario">
+                    <div class="tweet__conteudo">
+                        <h2 class="nome__usuario">Lucas Alves</h2>
+                        <span class="nome__social">@alvesLucas . 23s</span>
+                        <p class="frase__tweet">Tom is in a big hurry.</p>
+                        <img src="assets/main__img/publicacao.png" alt="Astronauta" class="astronauta">
+                    </div>
+                </li>
+                <li class="conteudo__principal">
+                    <img src="assets/main__img/111922665.jpeg" alt="Foto Perfil" class="foto-well">
+                    <div class="tweet__conteudo">
+                        <h2>Wellington Silva</h2>
+                        <span>@silvaWellington . 23s</span>
+                        <p>Tom is in a big hurry.</p>
+                        <img src="assets/main__img/Placehpolder.svg" alt="Sala" class="sala">
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main> 
+</div>
+
     <footer class="rodape">
         <div class="texto__rodape">
             <h2 class="titulo-rodape">Don't miss what's happening</h2>
