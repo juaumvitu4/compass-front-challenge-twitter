@@ -91,7 +91,7 @@
         <div class="listra-cima"></div>        
         <img src="assets/main__img/dark.svg" alt="dark-tema" class="dark__tema">
         <img src="assets/main__img/Foto.jpeg" alt="" class="foto-perfil-top">
-        <textarea name="text" class="texto__publica" placeholder="What's happening?" minlength="1" maxlength="380"></textarea>      
+        <textarea name="text" class="texto__publica" placeholder="What's happening?" minlength="1" maxlength="380"></textarea>
         <div class="listra-baixo"></div>
         <div class="publicacao__opcao">
             <img src="assets/main__img/imgIcon.svg" alt="icon">
@@ -100,8 +100,9 @@
             <img src="assets/main__img/emojiIcon.svg" alt="icon">
             <img src="assets/main__img/CalendarIcon.svg" alt="icon">
         </div>
-        <button class="twittar__publicacao" onclick="imprimirNoConsole()">Tweet</button>
+        <button class="twittar__publicacao" onclick="pegarValor()">Tweet</button>
 
+        
         <section class="conteudo__tweet">
             <ul class="conteudo__principaltweet">
                 <li class="conteudo__principal">
@@ -160,13 +161,13 @@
         </div>
         <div class="tabela-seguidores">
             <img src="assets/lateral__img/Profile Picture.svg" alt="Foto-perfil" class="foto-seguidores">
-            <h3>Bessie Cooper <b class="nick-nome">@Alessandroveronezi</b></h3>                  
+            <h3>Bessie Cooper <p class="nick-nome">@Alessandroveronezi</p></h3>                  
             <button class="seguir-btn">Follow</button>
         </div>
         <div class="tabela-seguidores">
             <img src="assets/lateral__img/Profile Picture2.svg" alt="Foto-perfil" class="foto-seguidores">
-            <h3>Jenny Wilson <b class="nick-nome">@Alessandroveronezi</b></h3>                  
-            <button class="seguir-btn">Follow</button>
+            <h3>Jenny Wilson <p class="nick-nome">@gabrielcantarin</p></h3>                  
+            <button class="seguir-btn seguidor-btn">Follow</button>
         </div>
         <div class="mostrar-mais">
             <h2 class="texto-mostrar"> <a href="#" class="texto-motrar-mais"> Show more</a></h2>
@@ -188,6 +189,6 @@
         </div>
     </footer>
 
-    <script src="scripts/postagem.ts"></script>
+    <script src="scripts/postagem.js"></script>
 </body>
 </html>
