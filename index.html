@@ -13,17 +13,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Nunito:wght@400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/lateral.css">
     <link rel="stylesheet" href="reset.css">
     <title>Twitter - Web</title>
 </head>
 <body>
 <div class="tamanho">
-    <header class="navegacao__lateral">
+    <header class="navegacao__lateral">        
         <aside class="aside-esquerda">
             <div class="navegacao">
                 <div>
-                <img src="assets/img/twitter.svg" alt="twitter">
+                <img src="assets/img/twitter.svg" alt="twitter" class="logo-twitter">
                 </div>
 
             <div class="barra_navegar">
@@ -70,23 +72,26 @@
                 <button class="twittar">Tweet</button>
             </div>   
             
-            <div>
+            <div class="nome-usuario">
                 <img src="assets/main__img/Foto.jpeg" alt="perfil" class="foto-perfil">
-            </div>
+            
 
             <div class="informacao">
                 <span class="nome-sobrenome">João Vitor</span>
-                <p class="site">@Juaumvitu</p>                
+                <p class="site">@Juaumvitu</p>
+                <img src="assets/img/opcao.svg" alt="opcao" class="pontinhos">                
             </div>
-        </aside>
-    </header>
 
+            
+        </aside>
+    </header>   
     
     <main class="principal">
         <h2 class="texto__home">Home</h2>
-        <div class="listra-cima"></div>
+        <div class="listra-cima"></div>        
         <img src="assets/main__img/dark.svg" alt="dark-tema" class="dark__tema">
-        <input type="text" name="publicacao" class="texto__publica" placeholder="What's happening?" minlength="1" maxlength="380">
+        <img src="assets/main__img/Foto.jpeg" alt="" class="foto-perfil-top">
+        <textarea name="text" class="texto__publica" placeholder="What's happening?" minlength="1" maxlength="380"></textarea>      
         <div class="listra-baixo"></div>
         <div class="publicacao__opcao">
             <img src="assets/main__img/imgIcon.svg" alt="icon">
@@ -95,7 +100,7 @@
             <img src="assets/main__img/emojiIcon.svg" alt="icon">
             <img src="assets/main__img/CalendarIcon.svg" alt="icon">
         </div>
-        <button class="twittar__publicacao">Tweet</button>
+        <button class="twittar__publicacao" onclick="imprimirNoConsole()">Tweet</button>
 
         <section class="conteudo__tweet">
             <ul class="conteudo__principaltweet">
@@ -120,8 +125,58 @@
             </ul>
         </section>
     </main> 
-</div>
 
+    <header class="lateral-direita">
+        <div class="lateral-direta">
+            <input type="text" placeholder="Search Twitter" class="pesquisa">
+            <img src="assets/lateral__img/pesquisa.svg" alt="Pesquisa" class="barra__pesquisa">
+        </div>
+        <div class="barra__lateral">
+            <h2 class="texto__lateral">What's happening</h2>
+        </div>
+        <div class="noticias-lateral">
+            <p class="texto-descricao">Covid . Last night</p>
+            <h2 class="texto-principal">England's Chief Medical Officer <br> says the UK is at the most <br> dangerous time of the pandemic</h2>
+            <img src="assets/lateral__img/Placeholder.svg" alt="Foto noticias" class="foto-noticias">            
+            <p class="subdescricao">Trending with</p>
+        </div>
+            <div class="segunda-noticia">
+                <p class="texto-descricao">US news . 4h ago</p>
+                <h2 class="texto-principal">Parler may go offline following <br> suspensions by Amazon, Apple <br> and Google</h2>
+                <img src="assets/lateral__img/noticias.svg" alt="Foto noticias" class="foto-noticias">
+                <p class="subdescricao">Trending with</p>
+            </div>
+            <div class="terceira-noticia">
+                <p class="texto-descricao">India . 1h ago</p>
+                <h2 class="texto-principal">India vs Australia: India hold on <br> to earn a draw on Day 5 in <br> Sydney Test</h2>
+                <img src="assets/lateral__img/india.svg" alt="Foto noticias" class="foto-noticias">
+                <p class="subdescricao">Trending with</p>
+            </div>
+            <div class="mostrar-mais">
+                <h2 class="texto-mostrar"> <a href="#" class="texto-motrar-mais">Show more</a></h2>
+            </div>
+        <div class="seguidores">
+            <h2 class="seguindo">Who to follow</h2>
+        </div>
+        <div class="tabela-seguidores">
+            <img src="assets/lateral__img/Profile Picture.svg" alt="Foto-perfil" class="foto-seguidores">
+            <h3>Bessie Cooper <b class="nick-nome">@Alessandroveronezi</b></h3>                  
+            <button class="seguir-btn">Follow</button>
+        </div>
+        <div class="tabela-seguidores">
+            <img src="assets/lateral__img/Profile Picture2.svg" alt="Foto-perfil" class="foto-seguidores">
+            <h3>Jenny Wilson <b class="nick-nome">@Alessandroveronezi</b></h3>                  
+            <button class="seguir-btn">Follow</button>
+        </div>
+        <div class="mostrar-mais">
+            <h2 class="texto-mostrar"> <a href="#" class="texto-motrar-mais"> Show more</a></h2>
+        </div>
+        <div class="servico">
+            <p class="termos">Terms of Service Privacy Policy <br> Cookie Policy
+                Ads info More © 2021 Twitter, Inc.</p>
+        </div>
+    </header>
+</div>
     <footer class="rodape">
         <div class="texto__rodape">
             <h2 class="titulo-rodape">Don't miss what's happening</h2>
@@ -132,5 +187,7 @@
             <button class="sing">Sing Up</button>
         </div>
     </footer>
+
+    <script src="scripts/postagem.ts"></script>
 </body>
 </html>
