@@ -32,10 +32,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 100px;
-    margin-right: 20px;
     position: relative;
-    bottom: 4em;    
+    bottom: 60px;
+    
+        
 }
 
 .home {
@@ -59,6 +59,10 @@
     text-decoration: none;
     color: #0F1419;
     margin-left: 30px;
+}
+
+.link__navegar:hover {
+    color: #1DA1F2;
 }
 
 .icones:hover {
@@ -89,6 +93,11 @@
     font-size: 15px;
     line-height: 19px;
     text-align: center;
+    cursor: pointer;
+}
+
+.twittar:hover {
+    background-color: #1DA1F2;
 }
 
 .foto-perfil {
@@ -104,7 +113,7 @@
 
 .nome-usuario {
     position: relative;
-    top: 7em;
+    top: 5em;
 }
 
 .pontinhos {
@@ -113,6 +122,13 @@
     position: relative;
     bottom: 20px;
 
+}
+
+.pontinhos1{
+    position: relative;
+    right: 9em;
+    bottom: 12px;
+    width: 15px;
 }
 
 .informacao {
@@ -144,15 +160,34 @@
     display: flex;
     justify-content: space-around;    
     padding-top: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
+.paragrafo {
+    position: relative;
+    left: 26em;
+    top: 6px;
+    font-size: 14px;
+    
+    
+}
+
+.titulo-rodape {
+    position: relative;
+    left: 15em;
+    font-weight: 700;
+    font-size: 24px;
+
+}
 .texto__rodape {
     display: flex;
     flex-direction: column;    
     color: #FFFFFF;
     font-size: 24px;
+
+    
 }
+
 
 .login {
     color: #FFFFFF;
@@ -161,7 +196,8 @@
     width: 100px;
     height: 40px;
     border: 1px solid rgba(0, 0, 0, 0.164);
-    margin-left: 60em;
+    margin-left: 40em;
+    
 }
 
 .sing {
@@ -172,4 +208,16 @@
     border: 1px solid #0f141931;
     border-radius: 30px;
 
+}
+
+.login-twitter {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.sing-twitter {
+    text-decoration: none;
+    color: #587083;
+    font-size: 16px;
 }

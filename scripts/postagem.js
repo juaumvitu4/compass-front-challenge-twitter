@@ -1,16 +1,18 @@
-export const textarea = document.querySelector('.texto__publica'); // Texto
-export const tweetar = document.querySelector('.twittar__publicacao'); // Button
-export const publicacao = document.querySelector(".conteudo__principaltweet")
+
+
+const textarea = document.querySelector('.texto__publica'); // Texto
+const tweetar = document.querySelector('.twittar__publicacao'); // Button
+const publicacao = document.querySelector(".conteudo__principaltweet")
 
 function pegarTweet() { 
 
-    const tweetarTextarea = this.textarea.value;
+    const tweetarTextarea = textarea.value
     criarTweet(tweetarTextarea); 
 }
 
 tweetar.addEventListener('click', pegarTweet)
 
-function criarTweet(tweetar: Tweetar) {
+function criarTweet(tweetar) {
 
     let data = new Date();
     let hora = data.getHours();
@@ -24,41 +26,33 @@ const tweet = {
     tempo: `${hora}:${minuto}`
     }   
 
-    
+    listaParaTweet(tweet);
 }
 
-interface Tweetar{
-    nome: string,
-    foto: string,
-    usuario: string, 
-    texto: string,
-    tempo: string
+function listaParaTweet(tweet){
 
-    listaParaTweet(tweet: Tweetar);
-}
-
-function listaParaTweet(tweet: Tweetar){    
+    const {nome, foto, usuario, texto, tempo} = tweet;
     
     let li = document.createElement("li");
     li.classList.add('conteudo__principal')
-    
+
     let img = document.createElement("img");
-    img.src = tweet.foto;    
-    img.classList.add('perfil-usuario');    
+    img.src = foto;
+    img.classList.add('perfil-usuario')
 
     let div = document.createElement("div");
     div.classList.add('tweet__conteudo')
 
     let h2 = document.createElement("h2");
     h2.classList.add('nome__usuario')
-    
-    h2.innerText = tweet.nome;
+
+    h2.innerText = nome;
     let span = document.createElement("span");
-    span.innerText = `${tweet.usuario} ${tweet.tempo}`;
+    span.innerText = `${usuario} ${tempo}`;
     span.classList.add('frase__tweet')
 
     let p = document.createElement("p");
-    p.innerText = tweet.texto;
+    p.innerText = texto;
     p.classList.add('frase__tweet')
 
     div.appendChild(h2);
@@ -68,8 +62,10 @@ function listaParaTweet(tweet: Tweetar){
 
     li.appendChild(img)
     li.appendChild(div)
+    
     publicacao.append(li)
     
 
-    this.textarea.value = "";
+    textarea.value = "";
 }
+

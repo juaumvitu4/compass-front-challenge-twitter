@@ -5,15 +5,15 @@
     "next": "^13.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^5.3.6",
-    "typescript": "^4.8.4"
+    "styled-components": "^5.3.6"
   },
   "scripts": {
     "start": "next start",
     "dev": "next dev",
     "build": "next build",
     "dev:docs": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "compile": "tsc"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
@@ -25,6 +25,8 @@
     "@storybook/manager-webpack5": "^6.5.13",
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
-    "babel-loader": "^8.2.5"
+    "babel-loader": "^8.2.5",
+    "lite-server": "^2.6.1",
+    "typescript": "^4.2.2"
   }
 }

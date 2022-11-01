@@ -9,26 +9,29 @@
     margin-top: 60px;
     width: 500px;
     margin-left: 20px;
+    
    
 }
 
 .texto__home {
     font-weight: 700;
     font-size: 19px;
-    line-height: 22px;
-    margin-bottom: 35px;    
-    padding: 10px;  
-    position: fixed;   
-    top: 0; 
+    line-height: 22px; 
+    position: relative;
+    top: 15px;    
+     
+    
     
 }
+
+
 
 .twittar__publicacao {
     margin-right: 10em;
     width: 77px;
     height: 39px;    
     background-color: #1DA1F2;
-    opacity: 0.5;
+    opacity: 0.9;
     border-radius: 50px;
     border: none;
     color: #FFFFFF;
@@ -38,13 +41,21 @@
     margin-left: 30em;
     position: relative;
     bottom: 30px;   
+    cursor: pointer;
+}
+
+.twittar__publicacao:hover {
+    background-color: #1DA1F2;
+    opacity: 0.5s;
+    
 }
 
 .principal{    
     width: 43em;    
     align-items: center;   
     flex-direction: column;
-    
+    /* position: relative;
+    right: 14em; */
     padding-left: 30px;
     font-family: 'Poppins';
     
@@ -53,7 +64,7 @@
     position: fixed;
     top: 0;
     margin-left: 40em;
-    margin-top: 10px;
+    margin-top: 15px;
     
     
 }
@@ -103,7 +114,7 @@
     border-radius: 10px;
     padding: 10px;
     position: relative;
-    right: 40px;
+    right: 20px;
     margin: 0px 0px 20px 0px;
 }
 
