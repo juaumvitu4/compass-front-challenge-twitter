@@ -6,7 +6,7 @@
 
 .tamanho {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
@@ -55,6 +55,7 @@
     margin-right: 40px;
 }
 
+
 .link__navegar {
     text-decoration: none;
     color: #0F1419;
@@ -100,6 +101,10 @@
     background-color: #1DA1F2;
 }
 
+.twittar-link {
+    text-decoration: none;
+    color: white;
+}
 .foto-perfil {
     border-radius: 40px;
     margin-top: 140px;
@@ -110,6 +115,7 @@
     
     
 }
+
 
 .nome-usuario {
     position: relative;
@@ -165,9 +171,9 @@
 
 .paragrafo {
     position: relative;
-    left: 26em;
+    left: 22em;
     top: 6px;
-    font-size: 14px;
+    font-size: 17px;
     
     
 }

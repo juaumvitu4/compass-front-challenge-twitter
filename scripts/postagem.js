@@ -10,8 +10,6 @@ function pegarTweet() {
     criarTweet(tweetarTextarea); 
 }
 
-tweetar.addEventListener('click', pegarTweet)
-
 function criarTweet(tweetar) {
 
     let data = new Date();
@@ -57,6 +55,7 @@ function listaParaTweet(tweet){
 
     div.appendChild(h2);
     div.appendChild(span);
+
     div.appendChild(p);
 
 

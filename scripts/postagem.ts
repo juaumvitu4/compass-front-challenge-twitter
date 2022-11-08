@@ -10,7 +10,7 @@ function pegarTweet() {
 
 tweetar.addEventListener('click', pegarTweet)
 
-function criarTweet(tweetar: Tweetar) {
+function criarTweet(tweetar) {
 
     let data = new Date();
     let hora = data.getHours();

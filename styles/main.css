@@ -13,18 +13,31 @@
    
 }
 
+.seguir-btn:hover{
+    background-color: #1DA1F2;
+    color: #FFFFFF;
+    transition: 0.  3s;
+
+}
+
 .texto__home {
     font-weight: 700;
     font-size: 19px;
     line-height: 22px; 
     position: relative;
     top: 15px;    
-     
-    
-    
 }
 
+.curtidas {
+    position: relative;
+    right: 35px;
+}
 
+.icones-fotos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
 
 .twittar__publicacao {
     margin-right: 10em;
